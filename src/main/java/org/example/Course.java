@@ -44,7 +44,7 @@ public class Course extends AcademicItem {
      * @param student given student to add
      * @return boolean value on whether the student was added or not
      */
-    public boolean AddStudent(Student student) {
+    public boolean addStudent(Student student) {
         if (students.contains(student)) return false;
         students.add(student);
         return true;
