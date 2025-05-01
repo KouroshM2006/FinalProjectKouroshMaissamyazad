@@ -6,7 +6,7 @@ log: 50% implementation
 - Fully implemented both super classes
 - decision to remove the uploadSchedule method from the Student class, becaue I don't think it would be necessary
 - implemented the Course class and later I will add the courseComparator insider class to it
-- fully implemented the createUser interface
+- fully implemented the createUser interface and Administrator class
 - created junit testing for all user defined methods
 - semi implementation of the Teacher class
   
