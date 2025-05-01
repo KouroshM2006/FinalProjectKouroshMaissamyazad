@@ -19,7 +19,7 @@ public class StudentTest {
         Map<LocalDate, LocalTime> map = new TreeMap<>();
         map.put(LocalDate.now(), LocalTime.now());
         Teacher teacher = new Teacher("john", 56, User.Gender.MALE);
-        student.getSchedule().add(new Course("english","xxxx",teacher,new ArrayList<>(),map));
+        student.getSchedule().add(new Course("english", "xxxx", teacher, new ArrayList<>(), map));
 
         student.downloadSchedule();
 
