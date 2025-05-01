@@ -14,6 +14,7 @@ public abstract class User {
         MALE, FEMALE
     }
 
+
     public User(String name, int age, Gender gender) {
         this.id = nextId++;
         this.name = name;
@@ -28,6 +29,10 @@ public abstract class User {
         this.gender = gender;
     }
 
+    /**
+     * returns the role of the user (Student, Teacher) as a string
+     * @return string
+     */
     public abstract String getRole();
 
     @Override

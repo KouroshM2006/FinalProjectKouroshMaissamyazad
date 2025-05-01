@@ -50,6 +50,8 @@ public class Course extends AcademicItem {
         return true;
     }
 
+    // Todo: add CourseComparator class
+
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
