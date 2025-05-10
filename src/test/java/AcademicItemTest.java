@@ -9,16 +9,16 @@ public class AcademicItemTest {
     @Test
     public void getTypeTest() {
         Teacher teacher = new Teacher("john", 56, User.Gender.MALE);
-        Course course = new Course("english", "xxxx", teacher, new ArrayList<>(), new TreeMap<>());
+        Course course = new Course("english", "xxxx", teacher, new TreeMap<>(), 10);
         Assertions.assertEquals(course.getType(), "Course");
     }
 
     @Test
     public void compareToTest() {
         Teacher teacher = new Teacher("john", 56, User.Gender.MALE);
-        Course c1 = new Course("english", "xxxx", teacher, new ArrayList<>(), new TreeMap<>());
-        Course c2 = new Course("english", "xxxx", teacher, new ArrayList<>(), new TreeMap<>());
-        Course c3 = new Course("english", "xxxx", teacher, new ArrayList<>(), new TreeMap<>());
+        Course c1 = new Course("english", "xxxx", teacher, new TreeMap<>(), 3);
+        Course c2 = new Course("english", "xxxx", teacher, new TreeMap<>(), 3);
+        Course c3 = new Course("english", "xxxx", teacher, new TreeMap<>(), 3);
 
         c1.setCreatedDate(LocalDate.now());
         c2.setCreatedDate(LocalDate.of(2025, 1, 3));

@@ -1,8 +1,6 @@
 package org.example;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Comparator;
 import java.util.Objects;
 
 public abstract class AcademicItem implements Comparable<AcademicItem> {
